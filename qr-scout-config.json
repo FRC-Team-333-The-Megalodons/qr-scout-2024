@@ -1,0 +1,285 @@
+{
+    "$schema": "../schema.json",
+    "title": "QRScout",
+    "page_title": "333 Scout Sheet",
+    "sections": [
+        {
+            "name": "Prematch",
+            "fields": [
+                {
+                    "title": "Scouter Name",
+                    "type": "text",
+                    "required": true,
+                    "code": "scouter",
+                    "preserveDataOnReset": true
+                },
+                {
+                    "title": "Match Number",
+                    "type": "number",
+                    "required": true,
+                    "code": "matchNumber"
+                },
+                {
+                    "title": "Robot starting position",
+                    "type": "select",
+                    "required": true,
+                    "code": "robot",
+                    "choices": {
+                        "0": "No show",
+                        "1": "Subwoofer (amp side)",
+                        "2": "Subwoofer (in front)",
+                        "3": "Subwoofer (source side)",
+                        "4": "Close to source"
+                    },
+                    "defaultValue": "2",
+                    "preserveDataOnReset": false
+                },
+                {
+                    "title": "Team",
+                    "type": "select",
+                    "required": true,
+                    "code": "team",
+                    "choices": {
+                        "20": "20",
+                        "28": "28",
+                        "144": "144",
+                        "191": "191",
+                        "229": "229",
+                        "250": "250",
+                        "263": "263",
+                        "287": "287",
+                        "333": "333",
+                        "340": "340",
+                        "358": "358",
+                        "424": "424",
+                        "578": "578",
+                        "639": "639",
+                        "810": "810",
+                        "1493": "1493",
+                        "1511": "1511",
+                        "1796": "1796",
+                        "1860": "1860",
+                        "2601": "2601",
+                        "2791": "2791",
+                        "3003": "3003",
+                        "3015": "3015",
+                        "3044": "3044",
+                        "3624": "3624",
+                        "3950": "3950",
+                        "4122": "4122",
+                        "4458": "4458",
+                        "4571": "4571",
+                        "4860": "4860",
+                        "4930": "4930",
+                        "5016": "5016",
+                        "5149": "5149",
+                        "5881": "5881",
+                        "6300": "6300",
+                        "6401": "6401",
+                        "6621": "6621",
+                        "6648": "6648",
+                        "6911": "6911",
+                        "7004": "7004",
+                        "7030": "7030",
+                        "7031": "7031",
+                        "7318": "7318",
+                        "7504": "7504",
+                        "7522": "7522",
+                        "7718": "7718",
+                        "8739": "8739",
+                        "9099": "9099"
+                    },
+                    "defaultValue": "333",
+                    "preserveDataOnReset": false
+                }
+            ]
+        },
+        {
+            "name": "Autonomous",
+            "fields": [
+                {
+                    "title": "Leave?",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "required": false,
+                    "code": "Mved"
+                },
+                {
+                    "code": "auamp",
+                    "title": "Amp Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "auampm",
+                    "title": "Speaker Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "ausc",
+                    "title": "Wing Note Collected",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "auskpm",
+                    "title": "Center Note Collected",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "Teleop",
+            "fields": [
+                {
+                    "code": "tcoop",
+                    "title": "Coopertition",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "required": false
+                },
+                {
+                    "code": "tamps",
+                    "title": "Amp Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "tsc",
+                    "title": "Speaker Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "tsm",
+                    "title": "Amplified Speaker Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "cn",
+                    "title": "Note in Trap?",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "Endgame",
+            "fields": [
+                {
+                    "title": "End Position",
+                    "type": "select",
+                    "required": true,
+                    "code": "epo",
+                    "choices": {
+                        "No": "No Climb",
+                        "Fc": "Failed Climb",
+                        "P": "Parked",
+                        "Os": "Climbed",
+                        "Sl": "Spotlight"
+                    },
+                    "defaultValue": "No Climb"
+                },
+                {
+                    "title": "Harmony",
+                    "type": "select",
+                    "required": true,
+                    "code": "harm",
+                    "choices": {
+                        "Not": "Not Completed",
+                        "Fir": "2 robots",
+                        "Sec": "3 robots"
+                    },
+                    "defaultValue": "Not Completed"
+                }
+            ]
+        },
+        {
+            "name": "Postmatch",
+            "fields": [
+                {
+                    "code": "or",
+                    "title": "Defense Received",
+                    "type": "select",
+                    "choices": {
+                        "1": "None",
+                        "2": "Minimal",
+                        "3": "Moderate",
+                        "x": "Constantly"
+                    },
+                    "required": false
+                },
+                {
+                    "title": "Team Number of Defending Team (Only if defense received is moderate or higher)",
+                    "type": "number",
+                    "required": false,
+                    "code": "defendnumber"
+                },
+                {
+                    "code": "dr",
+                    "title": "Defense Played",
+                    "type": "select",
+                    "choices": {
+                        "1": "None",
+                        "2": "Minimal",
+                        "3": "Moderate",
+                        "x": "Constantly"
+                    },
+                    "required": false
+                },
+                {
+                    "code": "motiontype",
+                    "title": "Motionless",
+                    "type": "select",
+                    "choices": {
+                        "1": "Died",
+                        "2": "Lost Comms",
+                        "3": "Tipped Over",
+                        "x": "Other (Explain in notes)"
+                    },
+                    "required": false
+                },
+                {
+                    "code": "motiontime",
+                    "title": "Time Motionless",
+                    "type": "select",
+                    "choices": {
+                        "1": "None",
+                        "2": "Small amount of time",
+                        "3": "Moderate amount of time",
+                        "x": "Most of the match",
+                        "y": "All of the match"
+                    },
+                    "required": false
+                },
+                {
+                    "code": "co",
+                    "title": "Comments",
+                    "type": "text",
+                    "min": 0,
+                    "max": 50,
+                    "required": false
+                }
+            ]
+        }
+    ]
+}
