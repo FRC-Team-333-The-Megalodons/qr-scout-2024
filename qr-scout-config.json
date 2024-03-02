@@ -171,16 +171,16 @@
                     "required": false
                 },
                 {
-                    "code": "teleopAmp",
-                    "title": "Amp Scored",
+                    "code": "teleopSpeakerMissed",
+                    "title": "Speaker Missed",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
                     "required": false
                 },
                 {
-                    "code": "teleopSpeakerMissed",
-                    "title": "Speaker Missed",
+                    "code": "teleopAmp",
+                    "title": "Amp Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -242,7 +242,7 @@
                     "title": "Who played defense?",
                     "type": "select",
                     "required": false,
-                    "code": "defendNumber",
+                    "code": "defenseNumber",
                     "choices": {
                         "0": "n/a",
                         "20": "20 - The Rocketeers",
@@ -310,7 +310,7 @@
                     "defaultValue": "0"
                 },
                 {
-                    "code": "motiontime",
+                    "code": "motionTime",
                     "title": "Motionless / Dead (explain in comments)",
                     "type": "select",
                     "choices": {
