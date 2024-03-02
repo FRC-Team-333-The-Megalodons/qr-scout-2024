@@ -1,264 +1,264 @@
 {
-  "$schema": "../schema.json",
-  "title": "QRScout",
-  "page_title": "333 Scout Sheet",
-  "sections": [
-    {
-      "name": "Prematch",
-      "fields": [
+    "$schema": "../schema.json",
+    "title": "QRScout",
+    "page_title": "333 Scout Sheet",
+    "sections": [
         {
-          "title": "Scouter Name",
-          "type": "text",
-          "required": true,
-          "code": "scouter",
-          "preserveDataOnReset": true,
-          "defaultValue": ""
+            "name": "Prematch",
+            "fields": [
+                {
+                    "title": "Scouter Name",
+                    "type": "text",
+                    "required": true,
+                    "code": "scouter",
+                    "preserveDataOnReset": true,
+                    "defaultValue": ""
+                },
+                {
+                    "title": "Team",
+                    "type": "select",
+                    "required": true,
+                    "code": "team",
+                    "choices": {
+                        "20": "20 - The Rocketeers",
+                        "28": "28 - Pierson Whalers",
+                        "144": "144 - Operation Orange",
+                        "191": "191 - X-CATS",
+                        "229": "229 - Division By Zero",
+                        "250": "250 - The Dynamos",
+                        "263": "263 - Aftershock",
+                        "287": "287 - Floyd Robotics",
+                        "333": "333 - MEGALODONS",
+                        "340": "340 - G.R.R. (Greater Rochester Robotics)",
+                        "358": "358 - Robotic Eagles",
+                        "424": "424 - Rust Belt Robotics",
+                        "578": "578 - R-cubed  - Red Raider Robotics",
+                        "639": "639 - Code Red Robotics",
+                        "810": "810 - The Mechanical Bulls",
+                        "1493": "1493 - Falcons",
+                        "1511": "1511 - Rolling Thunder",
+                        "1796": "1796 - RoboTigers",
+                        "1860": "1860 - Alphabots",
+                        "2601": "2601 - Steel Hawks",
+                        "2791": "2791 - Shaker Robotics",
+                        "3003": "3003 - TAN(X)",
+                        "3015": "3015 - Ranger Robotics",
+                        "3044": "3044 - Team 0xBE4",
+                        "3624": "3624 - ThunderColts",
+                        "3950": "3950 - RoboGym Robotics",
+                        "4122": "4122 - Ossining O-Bots",
+                        "4458": "4458 - Infernobotix",
+                        "4571": "4571 - Rambots",
+                        "4860": "4860 - Salesian Ironmen",
+                        "4930": "4930 - Electric Mayhem",
+                        "5016": "5016 - Huntington Robotics",
+                        "5149": "5149 - TroyBotics",
+                        "5881": "5881 - TVHS Dragons",
+                        "6300": "6300 - The Northwoodians",
+                        "6401": "6401 - 8-bit RAMs",
+                        "6621": "6621 - Artemis",
+                        "6648": "6648 - MechaSpartans",
+                        "6911": "6911 - SO BOTZ",
+                        "7004": "7004 - Ossining Owls",
+                        "7030": "7030 - The ROBOlympians",
+                        "7031": "7031 - Duanesburg Jr./Sr. High School",
+                        "7318": "7318 - Nanuet Knightronz",
+                        "7504": "7504 - CyBearBots",
+                        "7522": "7522 - MAKE1ROBOT",
+                        "7718": "7718 - HVPA Dragons",
+                        "8739": "8739 - Redhawk Robotics",
+                        "9099": "9099 - ANKAROB"
+                    },
+                    "defaultValue": "333 - MEGALODONS",
+                    "preserveDataOnReset": false
+                },
+                {
+                    "title": "Match Number",
+                    "type": "number",
+                    "required": true,
+                    "code": "matchNumber",
+                    "defaultValue": ""
+                },
+                {
+                    "title": "Robot Starting Position",
+                    "type": "select",
+                    "required": true,
+                    "code": "robotPosition",
+                    "choices": {
+                        "0": "No show",
+                        "1": "Subwoofer (amp side)",
+                        "2": "Subwoofer (in front)",
+                        "3": "Subwoofer (source side)",
+                        "4": "Close to source"
+                    },
+                    "defaultValue": "2",
+                    "preserveDataOnReset": false
+                }
+            ]
         },
         {
-          "title": "Team",
-          "type": "select",
-          "required": true,
-          "code": "team",
-          "choices": {
-            "20": "20 - The Rocketeers",
-            "28": "28 - Pierson Whalers",
-            "144": "144 - Operation Orange",
-            "191": "191 - X-CATS",
-            "229": "229 - Division By Zero",
-            "250": "250 - The Dynamos",
-            "263": "263 - Aftershock",
-            "287": "287 - Floyd Robotics",
-            "333": "333 - MEGALODONS",
-            "340": "340 - G.R.R. (Greater Rochester Robotics)",
-            "358": "358 - Robotic Eagles",
-            "424": "424 - Rust Belt Robotics",
-            "578": "578 - R-cubed  - Red Raider Robotics",
-            "639": "639 - Code Red Robotics",
-            "810": "810 - The Mechanical Bulls",
-            "1493": "1493 - Falcons",
-            "1511": "1511 - Rolling Thunder",
-            "1796": "1796 - RoboTigers",
-            "1860": "1860 - Alphabots",
-            "2601": "2601 - Steel Hawks",
-            "2791": "2791 - Shaker Robotics",
-            "3003": "3003 - TAN(X)",
-            "3015": "3015 - Ranger Robotics",
-            "3044": "3044 - Team 0xBE4",
-            "3624": "3624 - ThunderColts",
-            "3950": "3950 - RoboGym Robotics",
-            "4122": "4122 - Ossining O-Bots",
-            "4458": "4458 - Infernobotix",
-            "4571": "4571 - Rambots",
-            "4860": "4860 - Salesian Ironmen",
-            "4930": "4930 - Electric Mayhem",
-            "5016": "5016 - Huntington Robotics",
-            "5149": "5149 - TroyBotics",
-            "5881": "5881 - TVHS Dragons",
-            "6300": "6300 - The Northwoodians",
-            "6401": "6401 - 8-bit RAMs",
-            "6621": "6621 - Artemis",
-            "6648": "6648 - MechaSpartans",
-            "6911": "6911 - SO BOTZ",
-            "7004": "7004 - Ossining Owls",
-            "7030": "7030 - The ROBOlympians",
-            "7031": "7031 - Duanesburg Jr./Sr. High School",
-            "7318": "7318 - Nanuet Knightronz",
-            "7504": "7504 - CyBearBots",
-            "7522": "7522 - MAKE1ROBOT",
-            "7718": "7718 - HVPA Dragons",
-            "8739": "8739 - Redhawk Robotics",
-            "9099": "9099 - ANKAROB"
-          },
-          "defaultValue": "333 - MEGALODONS",
-          "preserveDataOnReset": false
+            "name": "Autonomous",
+            "fields": [
+                {
+                    "title": "Leave?",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "required": false,
+                    "code": "autoLeave"
+                },
+                {
+                    "code": "autoAmp",
+                    "title": "Amp Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "autoSpeaker",
+                    "title": "Speaker Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "autoWingIntake",
+                    "title": "Wing Note Collected",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 3,
+                    "required": false
+                },
+                {
+                    "code": "autoCenterIntake",
+                    "title": "Center Note Collected",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 5,
+                    "required": false
+                }
+            ]
         },
         {
-          "title": "Match Number",
-          "type": "number",
-          "required": true,
-          "code": "matchNumber",
-          "defaultValue": ""
+            "name": "Teleop",
+            "fields": [
+                {
+                    "code": "teleopAmp",
+                    "title": "Amp Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "teleopSpeaker",
+                    "title": "Speaker Scored",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                },
+                {
+                    "code": "teleopSpeakerMissed",
+                    "title": "Speaker Missed",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
+                }
+            ]
         },
         {
-          "title": "Robot Starting Position",
-          "type": "select",
-          "required": true,
-          "code": "robotPosition",
-          "choices": {
-            "0": "No show",
-            "1": "Subwoofer (amp side)",
-            "2": "Subwoofer (in front)",
-            "3": "Subwoofer (source side)",
-            "4": "Close to source"
-          },
-          "defaultValue": "2",
-          "preserveDataOnReset": false
+            "name": "Endgame",
+            "fields": [
+                {
+                    "title": "Climb / Park",
+                    "type": "select",
+                    "required": true,
+                    "code": "stagePos",
+                    "choices": {
+                        "No Park": "No park",
+                        "Parked": "Parked, climb not attempted",
+                        "Failed": "Failed climb",
+                        "Climbed": "Climbed - alone",
+                        "ClimbedH2": "Climbed - 2 robot harmony",
+                        "ClimbedH3": "Climbed - 3 robot harmony"
+                    },
+                    "defaultValue": "No park"
+                },
+                {
+                    "code": "stageTrap",
+                    "title": "Notes in Trap",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 3,
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "Post-Match",
+            "fields": [
+                {
+                    "code": "defenseReceived",
+                    "title": "Defense Received",
+                    "type": "select",
+                    "choices": {
+                        "0": "None",
+                        "1": "Small amount of time",
+                        "2": "Moderate amount of time",
+                        "3": "Most of the match"
+                    },
+                    "required": false,
+                    "defaultValue": "0"
+                },
+                {
+                    "title": "Who played the defense?",
+                    "type": "number",
+                    "required": false,
+                    "code": "defendNumber",
+                    "defaultValue": ""
+                },
+                {
+                    "code": "defensePlayed",
+                    "title": "Defense Played",
+                    "type": "select",
+                    "choices": {
+                        "0": "None",
+                        "1": "Small amount of time",
+                        "2": "Moderate amount of time",
+                        "3": "Most of the match"
+                    },
+                    "required": false,
+                    "defaultValue": "0"
+                },
+                {
+                    "code": "motiontime",
+                    "title": "Motionless / Dead (explain in comments)",
+                    "type": "select",
+                    "choices": {
+                        "0": "None",
+                        "1": "Small amount of time",
+                        "2": "Moderate amount of time",
+                        "3": "Most of the match"
+                    },
+                    "required": false,
+                    "defaultValue": "0"
+                },
+                {
+                    "code": "comments",
+                    "title": "Comments (ex: issues, penalties, defense skill, anything else not reflected in data)",
+                    "type": "text",
+                    "min": 0,
+                    "max": 2000,
+                    "required": false,
+                    "defaultValue": ""
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "Autonomous",
-      "fields": [
-        {
-          "title": "Leave?",
-          "type": "boolean",
-          "defaultValue": false,
-          "required": false,
-          "code": "autoLeave"
-        },
-        {
-          "code": "autoAmp",
-          "title": "Amp Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "autoSpeaker",
-          "title": "Speaker Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "autoWingIntake",
-          "title": "Wing Note Collected",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 3,
-          "required": false
-        },
-        {
-          "code": "autoCenterIntake",
-          "title": "Center Note Collected",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 5,
-          "required": false
-        }
-      ]
-    },
-    {
-      "name": "Teleop",
-      "fields": [
-        {
-          "code": "teleopAmp",
-          "title": "Amp Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "teleopSpeaker",
-          "title": "Speaker Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "teleopSpeakerMissed",
-          "title": "Speaker Missed",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        }
-      ]
-    },
-    {
-      "name": "Endgame",
-      "fields": [
-        {
-          "title": "Climb / Park",
-          "type": "select",
-          "required": true,
-          "code": "stagePos",
-          "choices": {
-            "No Park": "No park",
-            "Parked": "Parked, climb not attempted",
-            "Failed": "Failed climb",
-            "Climbed": "Climbed - alone",
-            "ClimbedH2": "Climbed - 2 robot harmony",
-            "ClimbedH3": "Climbed - 3 robot harmony"
-          },
-          "defaultValue": "No park"
-        },
-        {
-          "code": "stageTrap",
-          "title": "Notes in Trap",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "max": 3,
-          "required": false
-        }
-      ]
-    },
-    {
-      "name": "Post-Match",
-      "fields": [
-        {
-          "code": "defenseReceived",
-          "title": "Defense Received",
-          "type": "select",
-          "choices": {
-            "0": "None",
-            "1": "Small amount of time",
-            "2": "Moderate amount of time",
-            "3": "Most of the match"
-          },
-          "required": false,
-          "defaultValue": "0"
-        },
-        {
-          "title": "Who played the defense?",
-          "type": "number",
-          "required": false,
-          "code": "defendNumber",
-          "defaultValue": ""
-        },
-        {
-          "code": "defensePlayed",
-          "title": "Defense Played",
-          "type": "select",
-          "choices": {
-            "0": "None",
-            "1": "Small amount of time",
-            "2": "Moderate amount of time",
-            "3": "Most of the match"
-          },
-          "required": false,
-          "defaultValue": "0"
-        },
-        {
-          "code": "motiontime",
-          "title": "Motionless / Dead (explain in comments)",
-          "type": "select",
-          "choices": {
-            "0": "None",
-            "1": "Small amount of time",
-            "2": "Moderate amount of time",
-            "3": "Most of the match"
-          },
-          "required": false,
-          "defaultValue": "0"
-        },
-        {
-          "code": "comments",
-          "title": "Comments (ex: issues, penalties, defense skill, anything else not reflected in data)",
-          "type": "text",
-          "min": 0,
-          "max": 2000,
-          "required": false,
-          "defaultValue": ""
-        }
-      ]
-    }
-  ]
+    ]
 }
