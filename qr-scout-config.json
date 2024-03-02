@@ -107,16 +107,16 @@
                     "code": "autoLeave"
                 },
                 {
-                    "code": "autoAmp",
-                    "title": "Amp Scored",
+                    "code": "autoSpeaker",
+                    "title": "Speaker Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
                     "required": false
                 },
                 {
-                    "code": "autoSpeaker",
-                    "title": "Speaker Scored",
+                    "code": "autoAmp",
+                    "title": "Amp Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -146,16 +146,16 @@
             "name": "Teleop",
             "fields": [
                 {
-                    "code": "teleopAmp",
-                    "title": "Amp Scored",
+                    "code": "teleopSpeaker",
+                    "title": "Speaker Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
                     "required": false
                 },
                 {
-                    "code": "teleopSpeaker",
-                    "title": "Speaker Scored",
+                    "code": "teleopAmp",
+                    "title": "Amp Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -180,22 +180,26 @@
                     "required": true,
                     "code": "stagePos",
                     "choices": {
-                        "No Park": "No park",
-                        "Parked": "Parked, climb not attempted",
-                        "Failed": "Failed climb",
-                        "Climbed": "Climbed - alone",
-                        "ClimbedH2": "Climbed - 2 robot harmony",
-                        "ClimbedH3": "Climbed - 3 robot harmony"
-                    },
-                    "defaultValue": "No park"
+                        "NA": "No park",
+                        "P": "Parked, climb not attempted",
+                        "FC": "Failed climb",
+                        "C1": "Climbed - alone",
+                        "C2": "Climbed - 2 robot harmony",
+                        "C3": "Climbed - 3 robot harmony"
+                    }
                 },
                 {
                     "code": "stageTrap",
                     "title": "Notes in Trap",
-                    "type": "counter",
-                    "defaultValue": 0,
-                    "min": 0,
-                    "max": 3,
+                    "type": "select",
+                    "choices": {
+                        "NA": "No trap attempt",
+                        "FT": "Failed trap",
+                        "T1": "Trap (1 note)",
+                        "T2": "Trap (2 notes)",
+                        "T3": "Trap (3 notes)"
+                    },
+                    "defaultValue": "NA",
                     "required": false
                 }
             ]
