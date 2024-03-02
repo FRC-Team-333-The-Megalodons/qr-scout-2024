@@ -187,6 +187,7 @@
                         "C2": "Climbed - 2 robot harmony",
                         "C3": "Climbed - 3 robot harmony"
                     }
+                    "defaultValue":"NA"
                 },
                 {
                     "code": "stageTrap",
