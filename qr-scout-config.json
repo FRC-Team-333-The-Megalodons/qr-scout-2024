@@ -142,14 +142,7 @@
             "name": "Teleop",
             "fields": [
                 {
-                    "code": "tcoop",
-                    "title": "Coopertition",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "required": false
-                },
-                {
-                    "code": "tamps",
+                    "code": "teleop_amp",
                     "title": "Amp Scored",
                     "type": "counter",
                     "defaultValue": 0,
@@ -157,7 +150,7 @@
                     "required": false
                 },
                 {
-                    "code": "tsc",
+                    "code": "teleop_speaker",
                     "title": "Speaker Scored",
                     "type": "counter",
                     "defaultValue": 0,
@@ -165,16 +158,8 @@
                     "required": false
                 },
                 {
-                    "code": "tsm",
-                    "title": "Amplified Speaker Scored",
-                    "type": "counter",
-                    "defaultValue": 0,
-                    "min": 0,
-                    "required": false
-                },
-                {
-                    "code": "cn",
-                    "title": "Note in Trap?",
+                    "code": "teleop_speaker_missed",
+                    "title": "Speaker Missed",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -186,30 +171,28 @@
             "name": "Endgame",
             "fields": [
                 {
-                    "title": "End Position",
+                    "title": "Climb / Park",
                     "type": "select",
                     "required": true,
                     "code": "epo",
                     "choices": {
-                        "No": "No Climb",
-                        "Fc": "Failed Climb",
-                        "P": "Parked",
-                        "Os": "Climbed",
-                        "Sl": "Spotlight"
+                        "No Park": "No park",
+                        "Parked": "Parked, climb not attempted",
+                        "Failed": "Failed climb",
+                        "Climbed": "Climbed - alone",
+                        "ClimbedH2": "Climbed - 2 robot harmony",
+                        "ClimbedH3": "Climbed - 3 robot harmony"
                     },
-                    "defaultValue": "No Climb"
+                    "defaultValue": "No park"
                 },
                 {
-                    "title": "Harmony",
-                    "type": "select",
-                    "required": true,
-                    "code": "harm",
-                    "choices": {
-                        "Not": "Not Completed",
-                        "Fir": "2 robots",
-                        "Sec": "3 robots"
-                    },
-                    "defaultValue": "Not Completed"
+                    "code": "trap",
+                    "title": "Notes in Trap",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 3,
+                    "required": false
                 }
             ]
         },
@@ -221,15 +204,16 @@
                     "title": "Defense Received",
                     "type": "select",
                     "choices": {
-                        "1": "None",
-                        "2": "Minimal",
-                        "3": "Moderate",
-                        "x": "Constantly"
+                        "0": "None",
+                        "1": "Small amount of time",
+                        "2": "Moderate amount of time",
+                        "3": "Most of the match"
                     },
-                    "required": false
+                    "required": false,
+                    "defaultValue": "0"
                 },
                 {
-                    "title": "Team Number of Defending Team (Only if defense received is moderate or higher)",
+                    "title": "Who played the defense?",
                     "type": "number",
                     "required": false,
                     "code": "defendnumber"
@@ -239,44 +223,32 @@
                     "title": "Defense Played",
                     "type": "select",
                     "choices": {
-                        "1": "None",
-                        "2": "Minimal",
-                        "3": "Moderate",
-                        "x": "Constantly"
+                        "0": "None",
+                        "1": "Small amount of time",
+                        "2": "Moderate amount of time",
+                        "3": "Most of the match"
                     },
-                    "required": false
-                },
-                {
-                    "code": "motiontype",
-                    "title": "Motionless",
-                    "type": "select",
-                    "choices": {
-                        "1": "Died",
-                        "2": "Lost Comms",
-                        "3": "Tipped Over",
-                        "x": "Other (Explain in notes)"
-                    },
-                    "required": false
+                    "required": false,
+                    "defaultValue": "0"
                 },
                 {
                     "code": "motiontime",
-                    "title": "Time Motionless",
+                    "title": "Motionless / Dead (explain in comments)",
                     "type": "select",
                     "choices": {
-                        "1": "None",
-                        "2": "Small amount of time",
-                        "3": "Moderate amount of time",
-                        "x": "Most of the match",
-                        "y": "All of the match"
+                        "0": "None",
+                        "1": "Small amount of time",
+                        "2": "Moderate amount of time",
+                        "3": "Most of the match"
                     },
                     "required": false
                 },
                 {
-                    "code": "co",
-                    "title": "Comments",
+                    "code": "comments",
+                    "title": "Comments (ex: issues, penalties, defense skill, anything else not reflected in data)",
                     "type": "text",
                     "min": 0,
-                    "max": 50,
+                    "max": 2000,
                     "required": false
                 }
             ]
