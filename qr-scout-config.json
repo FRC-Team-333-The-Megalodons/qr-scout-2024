@@ -241,7 +241,8 @@
                         "2": "Moderate amount of time",
                         "3": "Most of the match"
                     },
-                    "required": false
+                    "required": false,
+                    "defaultValue": "0"
                 },
                 {
                     "code": "comments",
@@ -249,7 +250,8 @@
                     "type": "text",
                     "min": 0,
                     "max": 2000,
-                    "required": false
+                    "required": false,
+                    "defaultValue": ""
                 }
             ]
         }
