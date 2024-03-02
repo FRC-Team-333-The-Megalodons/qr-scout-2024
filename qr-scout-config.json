@@ -80,6 +80,22 @@
                     "defaultValue": ""
                 },
                 {
+                    "title": "Robot Driver Station",
+                    "type": "select",
+                    "required": true,
+                    "code": "robotDriverStation",
+                    "choices": {
+                        "R1": "Red 1",
+                        "R2": "Red 2",
+                        "R3": "Red 3",
+                        "B1": "Blue 1",
+                        "B2": "Blue 2",
+                        "B3": "Blue 3"
+                    },
+                    "defaultValue":"",
+                    "preserveDataOnReset": false
+                },
+                {
                     "title": "Robot Starting Position",
                     "type": "select",
                     "required": true,
@@ -154,16 +170,16 @@
                     "required": false
                 },
                 {
-                    "code": "teleopAmp",
-                    "title": "Amp Scored",
+                    "code": "teleopSpeakerMissed",
+                    "title": "Speaker Missed",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
                     "required": false
                 },
                 {
-                    "code": "teleopSpeakerMissed",
-                    "title": "Speaker Missed",
+                    "code": "teleopAmp",
+                    "title": "Amp Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -186,7 +202,8 @@
                         "C1": "Climbed - alone",
                         "C2": "Climbed - 2 robot harmony",
                         "C3": "Climbed - 3 robot harmony"
-                    }
+                    },
+                    "defaultValue":"NA"
                 },
                 {
                     "code": "stageTrap",
@@ -224,7 +241,7 @@
                     "title": "Who played defense?",
                     "type": "select",
                     "required": false,
-                    "code": "defendNumber",
+                    "code": "defenseNumber",
                     "choices": {
                         "0": "n/a",
                         "20": "20 - The Rocketeers",
@@ -292,7 +309,7 @@
                     "defaultValue": "0"
                 },
                 {
-                    "code": "motiontime",
+                    "code": "motionTime",
                     "title": "Motionless / Dead (explain in comments)",
                     "type": "select",
                     "choices": {
