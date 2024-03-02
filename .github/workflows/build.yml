@@ -1,4 +1,4 @@
-name: JSON validation
+name: Pre-merge Checks
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: JSON validation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
