@@ -79,6 +79,23 @@
                     "code": "matchNumber",
                     "defaultValue": ""
                 },
+                
+                {
+                    "title": "Robot Driver Station",
+                    "type": "select",
+                    "required": true,
+                    "code": "robotDriverStation",
+                    "choices": {
+                        "R1": "Red 1",
+                        "R2": "Red 2",
+                        "R3": "Red 3",
+                        "B1": "Blue 1",
+                        "B2": "Blue 2",
+                        "B3": "Blue 3"
+                    },
+                    "defaultValue": "2",
+                    "preserveDataOnReset": false
+                },
                 {
                     "title": "Robot Starting Position",
                     "type": "select",
