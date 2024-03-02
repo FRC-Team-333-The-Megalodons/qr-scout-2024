@@ -79,7 +79,6 @@
                     "code": "matchNumber",
                     "defaultValue": ""
                 },
-                
                 {
                     "title": "Robot Driver Station",
                     "type": "select",
@@ -93,7 +92,7 @@
                         "B2": "Blue 2",
                         "B3": "Blue 3"
                     },
-                    "defaultValue": "2",
+                    "defaultValue":"",
                     "preserveDataOnReset": false
                 },
                 {
