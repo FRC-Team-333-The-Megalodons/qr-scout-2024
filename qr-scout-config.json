@@ -77,8 +77,7 @@
                     "type": "number",
                     "required": true,
                     "code": "matchNumber",
-                    "defaultValue": "",
-                    "preserveDataOnReset": true
+                    "defaultValue": ""
                 },
                 {
                     "title": "Robot Starting Position",
