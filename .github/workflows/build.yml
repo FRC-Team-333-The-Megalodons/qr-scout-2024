@@ -7,7 +7,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  json-validation:
+    name: Config is a valid JSON file
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v2.6.1
+  qrscout-validation:
     name: Config is a valid QRScout config
     runs-on: ubuntu-latest
     steps:
