@@ -24,4 +24,4 @@ jobs:
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
           INPUT_SCHEMA: /qrscout/config/schema.json
-          INPUT_JSONS: /config/*.json
+          INPUT_JSONS: /config/qr-scout-config.json
