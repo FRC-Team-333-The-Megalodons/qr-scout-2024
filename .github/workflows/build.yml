@@ -7,10 +7,28 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-    name: JSON validation
+  json-validation:
+    name: Config is a valid JSON file
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v2.6.1
+  qrscout-validation:
+    name: Config is a valid QRScout config
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout our config
+        uses: actions/checkout@v4
+        with:
+          path: 'config'
+      - name: Checkout QRScout
+        uses: actions/checkout@v4
+        with: 
+          repository: 'FRC2713/QRScout'
+          path: 'qrscout'
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /qrscout/config/schema.json
+          INPUT_JSONS: /config/qr-scout-config.json
