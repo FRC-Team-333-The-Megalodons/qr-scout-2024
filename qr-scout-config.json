@@ -124,7 +124,7 @@
                 },
                 {
                     "code": "autoSpeaker",
-                    "title": "Speaker Scored",
+                    "title": "Auto Speaker Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -132,7 +132,7 @@
                 },
                 {
                     "code": "autoAmp",
-                    "title": "Amp Scored",
+                    "title": "Auto Amp Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -295,6 +295,19 @@
                     },
                     "defaultValue": "0"
                 },
+                {
+                    "code": "defenseSkill",
+                    "title": "Defense Skill",
+                    "type": "select",
+                    "choices": {
+                        "0": "No defense",
+                        "1": "Ineffective",
+                        "2": "Somewhat effective",
+                        "3": "Very effective"
+                    },
+                    "required": false,
+                    "defaultValue": "0"
+                },  
                 {
                     "code": "defensePlayed",
                     "title": "Defense Played",
