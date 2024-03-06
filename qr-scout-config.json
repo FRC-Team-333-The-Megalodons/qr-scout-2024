@@ -328,7 +328,7 @@
                     "min": 0,
                     "max": 2000,
                     "required": true,
-                    "defaultValue": " "
+                    "defaultValue": ""
                 }
             ]
         }
