@@ -124,7 +124,7 @@
                 },
                 {
                     "code": "autoSpeaker",
-                    "title": "Speaker Scored",
+                    "title": "Auto Speaker Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
@@ -132,7 +132,7 @@
                 },
                 {
                     "code": "autoAmp",
-                    "title": "Amp Scored",
+                    "title": "Auto Amp Scored",
                     "type": "counter",
                     "defaultValue": 0,
                     "min": 0,
