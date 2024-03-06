@@ -296,6 +296,19 @@
                     "defaultValue": "0"
                 },
                 {
+                    "code": "defenseSkill",
+                    "title": "Defense Skill",
+                    "type": "select",
+                    "choices": {
+                        "0": "No defense",
+                        "1": "Ineffective",
+                        "2": "Somewhat effective",
+                        "3": "Very effective"
+                    },
+                    "required": false,
+                    "defaultValue": "0"
+                },  
+                {
                     "code": "defensePlayed",
                     "title": "Defense Played",
                     "type": "select",
