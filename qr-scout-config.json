@@ -327,8 +327,8 @@
                     "type": "text",
                     "min": 0,
                     "max": 2000,
-                    "required": false,
-                    "defaultValue": ""
+                    "required": true,
+                    "defaultValue": " "
                 }
             ]
         }
