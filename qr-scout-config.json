@@ -340,7 +340,7 @@
                     "type": "text",
                     "min": 0,
                     "max": 2000,
-                    "required": false,
+                    "required": true,
                     "defaultValue": ""
                 }
             ]
