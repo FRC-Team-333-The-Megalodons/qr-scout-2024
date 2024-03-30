@@ -113,6 +113,14 @@
                     "defaultValue": 0,
                     "min": 0,
                     "required": false
+                },
+                {
+                    "code": "teleopFeed",
+                    "title": "Notes Fed (Shooting Notes to Wing)",
+                    "type": "counter",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "required": false
                 }
             ]
         },
